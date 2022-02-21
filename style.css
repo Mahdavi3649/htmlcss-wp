@@ -50,10 +50,11 @@ nav > a {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  filter: contrast(0.5);
+  filter: contrast(0.75);
   object-fit: cover;
 }
 .bottom-contain {
+  width: 100%;
   height: 625px;
   background-color: white;
   margin-bottom: 3px;
@@ -94,14 +95,15 @@ nav > a {
   background-color: white;
   float: left;
   border-radius: 5px;
+  display: inline-block;
 }
 
-.side-main-img {
+.images-side img {
   width: 100%;
   height: 45%;
   object-fit: cover;
   border-radius: 5px;
-  filter: contrast(0.5);
+  filter: contrast(0.75);
 }
 
 .content {
@@ -117,7 +119,7 @@ nav > a {
   width: 100%;
   object-fit: cover;
   border-radius: 5px;
-  filter: contrast(0.5);
+  filter: contrast(0.75);
 }
 
 .contenttext,
@@ -132,4 +134,16 @@ nav > a {
   content: "";
   display: table;
   clear: both;
+}
+
+.images-side img:first-child {
+  display: none;
+}
+
+.images-side:hover img:last-child {
+  display: none;
+}
+
+.images-side:hover img:first-child {
+  display: inline-block;
 }
